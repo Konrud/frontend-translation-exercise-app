@@ -13,6 +13,9 @@ In this case our JSON object is located in the `public` directory.
 Ofcourse, there are another solutions to this problem.
 As an example we could use `<Suspense>`, but I've thought it might be overkill.
 
+*NOTE*: regarding the `lang` prop that we get in each component. 
+I haven't included it as an `useEffect` dependency intentionally, as in excercise requirements it's been said that we need
+it to load only for the first time component created (so I've understood it as when component has been mounted).
 
 *NOTE*: I'm not sure that I've fully understood the requirements for this excersice. 
 I'd say they're a bit ambiguous.
