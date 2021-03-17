@@ -20,6 +20,8 @@ export default function GeneralDetailsSection({ resource, lang = "en-US" }) {
     const { t } = global;
     const { name, description, resourceType, path } = resource;
     /* Second option using `fetch` (translation data is in the `public` folder) */
+    /*NOTE: regarding the lang prop that we get in each component. I haven't included it as an useEffect dependency intentionally, as in excercise requirements
+    it's been said that we need it to load only for the first time component created (so I've understood it as when component has been mounted).*/
     const { fetchRequest, data, error, isLoading } = useFetch();
     const [translateStrings, setTranslateStrings] = useState(null);
 
